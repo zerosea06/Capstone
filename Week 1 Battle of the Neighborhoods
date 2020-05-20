@@ -1,0 +1,145 @@
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Skills Network Labs</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="/hub/static/css/style.min.css?v=ab35cbd1a6857ec00620a56c43760477" type="text/css"/>
+    
+    
+    <script src="/hub/static/components/requirejs/require.js?v=f0cc8bbb2fcef87fc194fecbb632fcfa" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/jquery/dist/jquery.min.js?v=220afd743d9e9643852e31a135a9f3ae" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/bootstrap/dist/js/bootstrap.min.js?v=2f34b630ffe30ba2ff2b91e3f3c322a1" type="text/javascript" charset="utf-8"></script>
+    
+    <script>
+      require.config({
+          
+          urlArgs: "v=20200514232439",
+          
+          baseUrl: '/hub/static/js',
+          paths: {
+            components: '../components',
+            jquery: '../components/jquery/dist/jquery.min',
+            bootstrap: '../components/bootstrap/dist/js/bootstrap.min',
+            moment: "../components/moment/moment",
+          },
+          shim: {
+            bootstrap: {
+              deps: ["jquery"],
+              exports: "bootstrap"
+            },
+          }
+      });
+    </script>
+
+    <script type="text/javascript">
+      window.jhdata = {
+        base_url: "/hub/",
+        prefix: "/",
+        
+        
+        admin_access: false,
+        
+        
+        options_form: false,
+        
+      }
+    </script>
+
+    
+    
+
+</head>
+
+<body>
+
+<noscript>
+  <div id='noscript'>
+    JupyterHub requires JavaScript.<br>
+    Please enable it to proceed.
+  </div>
+</noscript>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="login-main" class="container">
+
+<div class="service-login">
+  <a role="button" class='btn btn-jupyter btn-lg' href='/hub/oauth_login?next=%2Fhub%2Fuser%2Fzerosea06%2Ffiles%2Flabs%2FDP0701EN%2FWeek%25201%2520Battle%2520of%2520the%2520Neighborhood.ipynb%3F_xsrf%3D2%257C0aa3c51f%257Cd97a1449f8b45f00a9ef5a35ee222512%257C1589914593'>
+    Sign in with Skills Network Labs
+  </a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="modal fade" id="error-dialog" tabindex="-1" role="dialog" aria-labelledby="error-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="error-label">Error</h4>
+      </div>
+      <div class="modal-body">
+        
+  <div class="ajax-error">
+    The error
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://browser.sentry-cdn.com/5.7.1/bundle.min.js" integrity="sha384-KMv6bBTABABhv0NI+rVWly6PIRvdippFEgjpKyxUcpEmDWZTkDOiueL5xW+cztZZ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/event-source-polyfill/0.0.9/eventsource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script>
+  Sentry.init({ dsn: 'https://2e3b76a9194342aa865816db1660e945@labs-sentry.cognitiveclass.ai/5' });
+</script>
+
+
+
+<script>
+if (window.location.protocol === "http:") {
+  // unhide http warning
+  var warning = document.getElementById('insecure-login-warning');
+  warning.className = warning.className.replace(/\bhidden\b/, '');
+}
+</script>
+
+
+
+</body>
+
+</html>
